@@ -1,0 +1,663 @@
+.faq-page {
+    position: relative
+}
+
+.faq-page .btn-orange {
+    display: none;
+    margin: 0 auto 20px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    padding-bottom: 1px
+}
+
+.faq-page .btn-orange:hover {
+    color: #fff;
+    background: #eb6951
+}
+
+.faq-page .mainbar-categories {
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.faq-page .container-with-sidebar,
+.faq-page .mainbar-categories {
+    display: flex;
+    gap: 30px;
+    padding: 0 25px 25px
+}
+
+.faq-page .sidebar-categories {
+    background: #2d2f44;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 330px;
+    width: 100%
+}
+
+.faq-page .sidebar-cat {
+    cursor: pointer;
+    background: #282a3d;
+    border-radius: 8px;
+    border: 1px solid #363953;
+    padding: 20px;
+    color: #fe7258;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.125rem;
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    line-height: 28px
+}
+
+.faq-page .sidebar-cat,
+.faq-page .sidebar-cat span {
+    transition: .2s
+}
+
+.faq-page .sidebar-cat:last-child {
+    margin-bottom: 0
+}
+
+.faq-page .sidebar-cat.active {
+    background: #e1644d;
+    color: #fff;
+    border: 1px solid #ff8a75
+}
+
+.faq-page .sidebar-cat.active span {
+    color: #ffc4b9
+}
+
+.faq-page .sidebar-cat:hover:not(.active) {
+    background: #222436
+}
+
+.faq-page .sidebar-cat span {
+    color: #888ba8;
+    text-transform: capitalize;
+    font-size: .9rem;
+    line-height: 22px;
+    font-weight: 600
+}
+
+.faq-page .sidebar-categories .sidebar-cat b {
+    line-height: 1.3
+}
+
+.faq-page .sidebar-categories .sidebar-cat span {
+    margin-top: 4px;
+    font-weight: 800;
+    margin-bottom: -2px
+}
+
+.faq-page .mainbar-categories .sidebar-cat {
+    align-items: center;
+    justify-content: center;
+    font-size: 1.65rem;
+    padding: 50px 70px;
+    text-align: center;
+    max-width: 385px;
+    margin-bottom: 0
+}
+
+.faq-page .mainbar-categories .sidebar-cat:hover {
+    transform: scale(1.02)
+}
+
+.faq-page .mainbar-categories .sidebar-cat span {
+    margin-top: 5px
+}
+
+.faq-page .categories-container {
+    width: 100%
+}
+
+.faq-page .category-qna-title {
+    position: relative;
+    color: #c2c5dc;
+    text-transform: uppercase;
+    font-size: 1.65rem;
+    font-weight: 900;
+    margin-bottom: 36px;
+    width: 100%
+}
+
+.faq-page .category-qna-title:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 999px;
+    background: #626682;
+    bottom: -16px;
+    left: 0
+}
+
+.faq-page .q {
+    padding: 20px 20px 20px 50px;
+    position: relative;
+    cursor: pointer
+}
+
+.faq-page .q:before {
+    position: absolute;
+    content: "\F0140";
+    color: #fff;
+    font-size: 25px;
+    left: 15px;
+    top: 2px;
+    margin: auto 0;
+    bottom: 0;
+    height: 0;
+    line-height: 0;
+    font-family: Material Design Icons
+}
+
+.faq-page .category-question {
+    position: relative;
+    background: #2d2f44;
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: default;
+    transition: .2s
+}
+
+.faq-page .category-question:last-child {
+    margin-bottom: 0
+}
+
+.faq-page .category-question.is-opened {
+    padding-bottom: 10px
+}
+
+.faq-page .category-question.is-opened .q:before {
+    content: "\F0143";
+    font-family: Material Design Icons;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 0;
+    line-height: 0
+}
+
+.faq-page .a {
+    position: relative;
+    background: #282a3d;
+    border-radius: 8px;
+    padding: 20px 25px;
+    color: #9599c8;
+    margin: 0 10px 0 50px
+}
+
+.faq-page .a:before {
+    position: absolute;
+    content: "A:";
+    font-size: 18px;
+    left: -30px;
+    top: 0;
+    margin: auto 0;
+    bottom: 0;
+    height: 0;
+    line-height: 0
+}
+
+.faq-page .a p:last-child {
+    margin-bottom: 0
+}
+
+@media (max-width:1300px) {
+    .faq-page .mainbar-categories {
+        gap: 20px
+    }
+}
+
+@media (max-width:900px) {
+    .card .card-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .card .card-header .card-title+.bar {
+        margin: 0 auto
+    }
+    .faq-page .container-with-sidebar {
+        flex-direction: column
+    }
+    .faq-page .sidebar-categories {
+        display: none
+    }
+    .faq-page .sidebar-cat {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0
+    }
+    .faq-page .category-qna-title {
+        text-align: center
+    }
+    .faq-page .btn-orange {
+        display: block
+    }
+}
+
+@media (max-width:760px) {
+    .faq-page .sidebar-categories {
+        display: none
+    }
+}
+
+@media (max-width:550px) {
+    .card .card-header .card-title {
+        font-size: 1.5rem;
+        text-align: center
+    }
+    .faq-page .btn-orange {
+        font-size: 1.1rem
+    }
+    .faq-page .category-qna-title {
+        font-size: 1.25rem
+    }
+}
+
+.ndzn-staff-page .btn-primary {
+    margin-left: auto
+}
+
+.ndzn-staff-page .panel {
+    margin-bottom: 10px
+}
+
+.ndzn-staff-page .header {
+    position: relative;
+    padding: 0 25px;
+    text-align: left
+}
+
+.ndzn-staff-page .header h2 {
+    position: relative;
+    z-index: 3;
+    margin: 0;
+    color: #fe7258;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.2rem
+}
+
+.ndzn-staff-page .header h2:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    border-radius: 8px;
+    background: #fe7258;
+    bottom: -12px;
+    left: 0
+}
+
+.ndzn-staff-page .members-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    grid-gap: 15px;
+    padding: 25px 25px 15px
+}
+
+.ndzn-staff-page .member {
+    padding: 5px
+}
+
+.ndzn-staff-page .member .image {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px
+}
+
+.ndzn-staff-page .member .name {
+    font-size: 1.05rem;
+    color: #fff;
+    font-weight: 700
+}
+
+.ndzn-staff-page .member .role {
+    color: #878cba;
+    font-size: 1rem;
+    line-height: 20px
+}
+
+@media (max-width:950px) {
+    .ndzn-staff-page .members-list {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media (max-width:700px) {
+    .ndzn-staff-page .header {
+        padding: 15px 27px;
+        flex-direction: column;
+        text-align: center
+    }
+    .ndzn-staff-page .header .mdi {
+        display: none
+    }
+    .ndzn-staff-page .header .btn-primary {
+        margin: 15px auto 0
+    }
+    .ndzn-staff-page .members-list {
+        padding: 27px
+    }
+}
+
+@media (max-width:600px) {
+    .ndzn-staff-page .header {
+        padding: 15px
+    }
+    .ndzn-staff-page .members-list {
+        grid-template-columns: 1fr;
+        padding: 15px
+    }
+    .ndzn-staff-page .member {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto
+    }
+}
+
+.card {
+    background: #32354c;
+    border: 1px solid #383b4f
+}
+
+.card .card-body {
+    padding: 34px 20px 40px;
+    position: relative
+}
+
+.card .card-body .card-title {
+    color: #f3755d;
+    font-weight: 800;
+    font-size: 25px;
+    padding-bottom: 9px
+}
+
+.card .card-body .card-text {
+    font-size: 17px;
+    font-weight: 600
+}
+
+.card .card-body .card-text>p:last-child {
+    margin-bottom: 0
+}
+
+.card .bar {
+    height: 3px;
+    width: 30px;
+    box-shadow: 0 0 8px 6px rgba(202, 103, 89, .2);
+    margin: 0 auto 15px
+}
+
+.card .card-footer {
+    border-top: none;
+    margin: 0 25px 25px;
+    padding: 0;
+    font-weight: 800;
+    color: #54576c;
+    text-transform: none;
+    background: #2b2e43;
+    border-radius: 9px !important
+}
+
+.card .card-footer .row {
+    flex: 1 1 auto
+}
+
+.card .card-footer .reading-time {
+    flex: 0 0 110px;
+    margin-left: 2px;
+    letter-spacing: 0;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center
+}
+
+.card .card-footer .published {
+    font-size: 12px;
+    letter-spacing: 0
+}
+
+.card .card-footer .author {
+    padding: 10px 15px
+}
+
+.card .card-footer .author,
+.card .card-footer .reading-time {
+    min-height: 54px;
+    display: flex;
+    align-items: center
+}
+
+.card .card-footer .authors {
+    border-right: 2px solid #32354c
+}
+
+.card .card-footer .authors .author {
+    position: relative
+}
+
+.card .card-footer .authors .author:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: #474a60;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 57px
+}
+
+.card .card-footer .authors .author .author-avatar {
+    width: 30px;
+    height: 30px;
+    border: unset;
+    margin-right: 31px
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column
+}
+
+.pagination.card .card-body {
+    padding: 15px
+}
+
+.pagination.card .card-body>.btn {
+    border: none;
+    background: #292c40;
+    border-radius: 6px;
+    letter-spacing: 0;
+    color: #bdbfd3;
+    font-size: 14px;
+    font-weight: 900;
+    width: 114px;
+    padding: 12px 14px
+}
+
+.pagination.card .card-body>.btn:focus,
+.pagination.card .card-body>.btn:hover {
+    color: #bdbfd3;
+    background: #2b2e43
+}
+
+.pagination.card .card-body .page-number {
+    font-size: 15px;
+    font-weight: 700;
+    color: #8386a2
+}
+
+.nav-item .nav-link {
+    background: #e1654e;
+    color: #fff;
+    font-weight: 700;
+    margin: 3px;
+    border-radius: 7px
+}
+
+.tag-header .site-title {
+    color: #e1654e;
+    font-size: 42px;
+    font-weight: 800
+}
+
+.tag-header .site-description {
+    font-size: 22px;
+    color: #fff
+}
+
+@media (max-width:1300px) {
+    .card .card-body {
+        padding: 25px 15px 20px
+    }
+    .card .card-body .card-title {
+        font-size: 21px
+    }
+    .card .card-body .card-text {
+        font-size: 15px
+    }
+    .card .card-footer {
+        margin: 0 15px 15px
+    }
+    .card .card-footer .reading-time {
+        font-size: 13px;
+        flex: 0 0 95px
+    }
+}
+
+@media (max-width:1150px) {
+    .card .card-body {
+        font-size: 16px
+    }
+    .card .card-footer .authors .author {
+        padding: 8px 12px
+    }
+    .card .card-footer .authors .author:after {
+        display: none
+    }
+    .card .card-footer .authors .author .author-avatar {
+        margin-right: 10px
+    }
+    .card .card-footer .reading-time {
+        min-height: 50px
+    }
+}
+
+@media (max-width:900px) {
+    .tag-header {
+        padding: 20px 0 44px
+    }
+}
+
+@media (max-width:700px) {
+    .footer-bottom .container.flex-center {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        flex-direction: column;
+        align-items: center
+    }
+    .footer-bottom .copyright {
+        text-align: center
+    }
+    .footer-bottom .copyright>h5 {
+        line-height: 24px
+    }
+    .footer-bottom .copyright>h6 {
+        line-height: 22px;
+        padding-top: 0
+    }
+    .footer-bottom #tm {
+        margin: 15px auto 0
+    }
+}
+
+@media (max-width:900px) {
+    .tag-header {
+        padding: 15px 0 35px
+    }
+    .tag-header .site-title {
+        font-size: 34px
+    }
+    .tag-header .site-description {
+        font-size: 20px
+    }
+}
+
+@media (max-width:650px) {
+    .tag-header {
+        text-align: center
+    }
+    .tag-header .site-title {
+        font-size: 30px
+    }
+    .tag-header .site-description {
+        font-size: 18px
+    }
+}
+
+@media (max-width:440px) {
+    .footer-main {
+        padding: 10px 0
+    }
+    .footer-main .container.flex-center section {
+        padding: 15px 0
+    }
+    .pagination.card .card-body {
+        padding: 10px
+    }
+    .pagination.card .card-body .page-number {
+        font-size: 13px
+    }
+    .pagination.card .card-body>.btn {
+        font-size: 13px;
+        padding: 12px 6px
+    }
+    .pagination.card .card-body.d-flex {
+        flex-direction: column
+    }
+    .pagination.card .card-body .page-number,
+    .pagination.card .card-body>.btn {
+        font-size: 14px
+    }
+    .pagination.card .card-body .page-number {
+        margin: 15px 0;
+        font-weight: 800
+    }
+    .pagination.card .card-body>.btn {
+        width: 120px
+    }
+    .card .card-body {
+        padding: 20px 15px 15px
+    }
+    .card .card-body .card-title {
+        padding-bottom: 10px !important
+    }
+    .card .card-footer {
+        margin: 0 10px 10px
+    }
+    .card .card-footer .reading-time {
+        display: none
+    }
+}
+
+.items-center {
+    align-items: center
+}

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>MoG Network</title>
+        <link rel="shortcut icon" href="https://media.discordapp.net/attachments/852612121124012082/862693750131261490/mog-removebg-preview.png">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://web.thearchon.net/font/font.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/theme.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/main.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+    <meta name="description" content="MoG Network offering Skyblock, Prison, Factions, Outlands, Survival, and Robbery gamemodes!" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="canonical" href="/index.html" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="next" href="" />
+
+    <meta property="og:site_name" content="MoG Network" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MoG Network" />
+    <meta property="og:description" content="Minecraft Java Edition network offering Skyblock, Prison, Factions, Outlands, Survival, and Robbery gamemodes!" />
+    <meta property="og:url" content="https://mognetwork.me" />
+    <meta property="og:image" content="https://media.discordapp.net/attachments/852612121124012082/882295101882236949/screen-0.jpg?width=1193&height=671" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MoG Network" />
+    <meta name="twitter:description" content="Minecraft Java Edition network offering Skyblock, Prison, Factions, Outlands, Survival, and Robbery gamemodes!" />
+    <meta property="og:image:width" content="3000" />
+    <meta property="og:image:height" content="666" />
+
+
+    <meta name="generator" content="Ghost 3.42" />
+    <link rel="alternate" type="application/rss+xml" title="MoG Network" href="https://mognetwork.me" />
+    <script>
+        window.ndznGiveaways = [{
+            iconClassName: 'mdi-clock-alert-outline',
+            name: 'Skyblock Chaos Rank Giveaway',
+            description: 'We are giving away an Overlord rank (worth $250) to 1x lucky winner! ',
+            end: 1608402600,
+            link: '',
+        }, ];
+
+
+
+    <!-- PurgeCSS removing these, oops, put'em back -->
+    <style>
+        #ndzn-header .header-nav .nav-link .mdi[data-label="Support"]::before {
+            content: "\F087E";
+            font-size: 28px;
+            margin-right: 9px;
+            top: 5px;
+        }
+
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1049;
+            width: 100vw;
+            height: 100vh;
+            background-color: #202230;
+        }
+
+        .modal-backdrop.fade {
+            opacity: 0;
+        }
+
+        .modal-backdrop.show {
+            opacity: 0.975;
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162899896-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162899896-1');
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '474443979943266');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=474443979943266&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190172883-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-190172883-1');
+    </script>
+
+</head>
+
+<body class="home-template">
+
+    <div class="site-wrapper">
+
+        <div id="ndzn-bg"></div>
+        <div id="ndzn-header">
+            <div class="header-glow"></div>
+            <div class="header-content">
+                <div class="header-socials">
+                    <div class="container flex-center">
+                        <div class="socials flex-center">
+                                                      <a href="https://www.youtube.com/c/MoGGamingYT" class="button button-social flex-center" target="_blank">
+                        <i class="mdi mdi-youtube"></i>
+                        <span>Youtube</span>
+                    </a>
+                            <a href="https://www.instagram.com/mog.gamingyt/" class="button button-social flex-center" target="_blank">
+                        <i class="mdi mdi-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                            <a href="https://discord.gg/moggaming" class="button button-discord button-social button-social-highlighted flex-center" target="_blank">
+                        <i class="mdi mdi-discord"></i>
+                        <span>Discord</span>
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-main">
+                    <div class="container flex-center">
+                        <div class="main-left">
+                            <a href="/" class=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-nav">
+                    <div class="container">
+                        <div class="nav-inner flex-center">
+                            <div class="nav-items">
+                                <a href="/index.html" class="nav-link flex-center active">
+        <i class="mdi" data-label="Home"></i>
+        <span>Home</span>
+    </a>
+                                <a href="/vote.html" class="nav-link flex-center">
+        <i class="mdi" data-label="Vote"></i>
+        <span>Vote</span>
+    </a>
+                                <a href="https://discord.gg/moggaming" class="nav-link flex-center">
+        <i class="mdi" data-label="Support"></i>
+        <span>Support</span>
+    </a>
+
+                            </div>
+                            <a hef="javascript:;" class="mobile-nav flex-center collapsed" data-toggle="collapse" data-target=".ndzn-mobile-nav">
+                        <span class="mdi mdi-menu"></span>
+                        <b>Menu</b>
+                    </a>
+                            <a href="/store.html" class="flex-center button-store" >
+                        <i class="mdi mdi-cart"></i>
+                        <span>Store</span>
+                    </a>
+                        </div>
+                    </div>
+                    <div class="container ndzn-mobile-nav collapse">
+                        <div class="inner">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="/index.html" class="nav-link flex-center active">
+        <i class="mdi" data-label="Home"></i>
+        <span>Home</span>
+    </a>
+    </a>
+                                    <a href="/vote.html" class="nav-link flex-center">
+        <i class="mdi" data-label="https://minecraftservers.org/vote/613439"></i>
+        <span>Vote</span>
+    </a>
+                                    <a href="https://discord.gg/moggaming" class="nav-link flex-center">
+        <i class="mdi" data-label="Support"></i>
+        <span>Support</span>
+    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main id="site-main">
+            <div class="container">
+                <div class="row justify-content-center posts">
+                    <div class="post mb-3 col-12 ">
+                        <article class="card small-card card-inline">
+                            <a class="article-image">
+                                <div class="img card-img-top" style="background-image: url(https://media.discordapp.net/attachments/852612121124012082/882219665273810954/supawit-oat-img000.jpg?width=1440&height=533)"></div>
+                            </a>
+                            <div class="card-body">
+                                    <h3 class="card-title">MoG Network</h3>
+                                    <div class="bar"></div>
+                                    <div class="card-text article-content">
+                                        <p>Hello everyone! Welcome to MoG Network Official site!!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="post mb-3 col-md-6 col-lg-4 ">
+                        <article class="card small-card ">
+                            <a class="article-image">
+                                <div class="img card-img-top" style="background-image: url(https://media.discordapp.net/attachments/852612121124012082/882295101882236949/screen-0.jpg?width=1044&height=587)"></div>
+                            </a>
+                            <div class="card-body">
+                                    <h3 class="card-title">Survival:</h3>
+                                    <div class="bar"></div>
+                                    <div class="card-text article-content">
+                                        <p>Survival mode is one of the main game modes in Minecraft. Players must collect resources, build structures, battle mobs, eat, and explore the world in an effort to survive and then thrive.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="post mb-3 col-md-6 col-lg-4 ">
+                        <article class="card small-card ">
+                            <a class="article-image">
+                                <div class="img card-img-top" style="background-image: url(https://media.discordapp.net/attachments/852612121124012082/882220964807606302/4164d2b737aae50118b73584f2eccbaf.png)"></div>
+                            </a>
+                            <div class="card-body">
+                                    <h3 class="card-title">Bedwars:</h3>
+                                    <div class="bar"></div>
+                                    <div class="card-text article-content">
+                                        <p>BedWars is a strategic PVP game with many styles that can lead you to victory or defeat! ... Each base also has merchants, from these you can buy almost everything you'll need in the game including such things as blocks for building out to the other islands and protecting your bed, weapons, armour and even base upgrades.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="post mb-3 col-md-6 col-lg-4 ">
+                        <article class="card small-card ">
+                            <a class="article-image">
+                                <div class="img card-img-top" style="background-image: url(https://media.discordapp.net/attachments/852612121124012082/880071779840835625/Minecraft-best-mini-games-feature-.jpg?width=1174&height=587)"></div>
+                            </a>
+                            <div class="card-body">
+                                    <h3 class="card-title">Minigames</h3>
+                                    <div class="bar"></div>
+                                    <div class="card-text article-content">
+                                        <p>Minigames are types of games that can be played alone or with other players. Many multiplayer servers include a wide range of different minigames. The most common type of minigames are PvP minigames, where players fight each other. There are also minigames where players build competitively. The minigames which we have are; BombLobbers
+TNT Run,
+TNT Tag,
+Party Games,
+Mini Games,
+Splegg,
+Temple Run,
+Prop Hunt,
+Quake,
+Block Party,
+Parkour.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                </nav>
+
+            </div>
+        </main>
+
+    </div>
+    <footer class="jumbotron site-footer mt-5 mb-0">
+        <div class="footer-main">
+            <div class="container flex-center">
+                <section class="section-left">
+                    <div class="section-heading">About Us</div>
+                    <div class="section-body">
+                        <p>
+                            MoG Gaming is a community-focused, feature-packed Minecraft server offering Survival, Minigames and many other gamemodes. We can't wait to see you online on <b style="text-transform:lowercase" class="ndzn-js--ip">our Minecraft server</b>!
+                        </p>
+                    </div>
+                </section>
+                <section class="section-middle">
+                    <div class="section-heading">Social Links</div>
+                    <div class="section-body">
+                        <a href="https://discord.gg/moggaming" class="social flex-center" target="_blank">
+						<i class="mdi mdi-discord"></i>
+						<span>Join our Discord Server</span>
+					</a>
+                        <a href="https://www.instagram.com/mog.gamingyt/" class="social flex-center" target="_blank">
+						<i class="mdi mdi-instagram"></i>
+						<span>Follow our Instagram</span>
+					</a>
+                                  <a href="https://www.youtube.com/c/MoGGamingYT" class="social flex-center" target="_blank">
+						<i class="mdi mdi-youtube"></i>
+						<span>Subscribe us on Youtube</span>
+					</a>
+                    </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container flex-center">
+                <div class="copyright">
+                    <h5>2021 &copy; MoG Network&nbsp;&nbsp;&bullet;&nbsp;&nbsp;All Rights Reserved</h5>
+                </div>
+
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="https://discord.gg/moggaming" class="support-button">
+		<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+	</a>
+
+    <script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function(image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <script src="/assets/built/script.js"></script>
+
+
+
+
+
+
+    <div id="blogSubscribe" class="modal fade">
+        <div class="modal-dialog modal-content-blog modal-content">
+            <form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl" onsubmit="mySubmitFunc()" id="myFormId">
+                <div style="display: none;">
+                    <input type="hidden" name="meta_web_form_id" value="1450165256" />
+                    <input type="hidden" name="meta_split_id" value="" />
+                    <input type="hidden" name="listname" value="awlist5583668" />
+                    <input type="hidden" name="redirect" value="/" id="redirect_1e798d71120fe3fb1afc03ffdc5e9e87" />
+                    <input type="hidden" name="meta_redirect_onlist" value="/" />
+                    <input type="hidden" name="meta_adtracking" value="My_Web_Form_2" />
+                    <input type="hidden" name="meta_message" value="1" />
+                    <input type="hidden" name="meta_required" value="name,email" />
+
+                    <input type="hidden" name="meta_tooltip" value="" />
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title">Email List</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg viewBox="0 0 20 20">
+                            <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm1.41-1.41A8 8 0 1 0 15.66 4.34 8 8 0 0 0 4.34 15.66zm9.9-8.49L11.41 10l2.83 2.83-1.41 1.41L10 11.41l-2.83 2.83-1.41-1.41L8.59 10 5.76 7.17l1.41-1.41L10 8.59l2.83-2.83 1.41 1.41z"/>
+                        </svg>
+                    </span>
+                </button>
+                </div>
+                <div id="af-form-1450165256" class="af-form modal-body">
+                    <p>Subscribe to receive emails from MoG Network for a reward in-game!</p>
+                    <div id="af-body-1450165256" class="af-body af-standards">
+                        <div class="form-group">
+                            <label class="previewLabel" for="awf_field-106173851">Minecraft username: </label>
+                            <input id="awf_field-106173851" class="form-control form-control-lg" type="text" name="name" class="text" value="" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" required placeholder="Steve"
+                            />
+                            <div class="af-clear"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="previewLabel" for="awf_field-106173852">Email: </label>
+                            <input class="form-control form-control-lg" id="awf_field-106173852" type="email" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " required placeholder="my@email.com"
+                            />
+                            <div class="af-clear"></div>
+                        </div>
+                        <div class="form-group submitbtn">
+                            <input name="submit" class="btn btn-primary btn-lg btn-block submit" type="submit" value="Subscribe" tabindex="502" />
+                            <div class="af-clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=jCysDIxsrEysbA==" alt="" /></div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // Special handling for in-app browsers that don't always support new windows
+        (function() {
+            function browserSupportsNewWindows(userAgent) {
+                var rules = [
+                    'FBIOS',
+                    'Twitter for iPhone',
+                    'WebView',
+                    '(iPhone|iPod|iPad)(?!.*Safari\/)',
+                    'Android.*(wv|\.0\.0\.0)'
+                ];
+                var pattern = new RegExp('(' + rules.join('|') + ')', 'ig');
+                return !pattern.test(userAgent);
+            }
+
+            if (!browserSupportsNewWindows(navigator.userAgent || navigator.vendor || window.opera)) {
+                document.getElementById('af-form-1450165256').parentElement.removeAttribute('target');
+            }
+        })();
+        <!--
+        (function() {
+            var IE = /*@cc_on!@*/ false;
+            if (!IE) {
+                return;
+            }
+            if (document.compatMode && document.compatMode == 'BackCompat') {
+                if (document.getElementById("af-form-1450165256")) {
+                    document.getElementById("af-form-1450165256").className = 'af-form af-quirksMode';
+                }
+                if (document.getElementById("af-body-1450165256")) {
+                    document.getElementById("af-body-1450165256").className = "af-body inline af-quirksMode";
+                }
+                if (document.getElementById("af-header-1450165256")) {
+                    document.getElementById("af-header-1450165256").className = "af-header af-quirksMode";
+                }
+                if (document.getElementById("af-footer-1450165256")) {
+                    document.getElementById("af-footer-1450165256").className = "af-footer af-quirksMode";
+                }
+            }
+        })();
+        -->
+    </script>
+
+    <!-- /AWeber Web Form Generator 3.0.1 -->
+    <div id="freeRank" class="modal fade hide-scrollbar" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header flex-center">
+                    <span>Claim TWO FREE RANKS using code "<b class="ndzn-js--freeRankCode"></b>"</span>
+                    <button class="mdi mdi-close" type="button" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <h5>STEP 1</h5>
+                    <p>Visit our Store and find the "Free Rank" section in the navigation. Click it.</p>
+                    <a id="open-store-link" class="btn btn-orange" href="" target="_blank">Open Store</a>
+
+                    <h5>STEP 2</h5>
+                    <p>Add the Free Rank Package to your Cart. (it will become free once you complete all 5 Steps)
+                    </p>
+                    <div class="img img-step-2">
+                        <img src="/assets/img/rank-help-step2.png" />
+                    </div>
+
+                    <h5>STEP 3</h5>
+                    <p>Choose which realm you'd like to receive your rank on.</p>
+                    <p class="green">Use this code TWICE to claim a rank on TWO realms!.</p>
+                    <div class="img img-step-3">
+                        <img src="/assets/img/rank-help-step3.png" />
+                    </div>
+
+                    <div class="input-box">
+                        <h5>STEP 4</h5>
+                        <p>Enter this code in the "Free Rank Code" input box:</p>
+                        <div class="img img-step-4">
+                            <div class="code ndzn-js--freeRankCode"></div>
+                            <img id="img-step-4" src="/assets/img/rank-help-step4-go.png" style="border:1px solid #535779" />
+                        </div>
+                    </div>
+
+                    <h5>STEP 5</h5>
+                    <p>Enter this code in the "Free Rank Code" input box:</p>
+                    <div class="img img-step-5">
+                        <img src="/assets/img/rank-help-step5.png" />
+                    </div>
+
+                    <h5>ONE MORE?</h5>
+                    <p>Repeat this process TWICE to get another free rank on a different realm!</p>
+                    <button type="button" class="btn btn-green" onclick="document.getElementById('freeRank').scroll({top:0,behavior:'smooth'})">
+                    Scroll to Top
+                </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            // openStoreLink:
+            const osl = document.getElementById('open-store-link');
+            const ga = osl.getAttribute;
+            const sa = osl.setAttribute;
+
+            const setFreeRankCode = function(text) {
+                document.querySelectorAll('.ndzn-js--freeRankCode').forEach(function(el) {
+                    el.innerHTML = text;
+                });
+            };
+
+            if (window.location.pathname.startsWith('/how-to-play/')) {
+                setFreeRankCode('START');
+                osl.setAttribute('href', osl.getAttribute('href') + '#free-rank-code=START');
+                document.getElementById("img-step-4").src = "/assets/img/rank-help-step4-start.png";
+            } else if (window.location.pathname.startsWith('/how-to-play-google/')) {
+                setFreeRankCode('GO');
+                osl.setAttribute('href', osl.getAttribute('href') + '#free-rank-code=GO');
+                document.getElementById("img-step-4").src = "/assets/img/rank-help-step4-go.png";
+            }
+        })();
+    </script>
+    <div id="videoTutorial" class="modal fade">
+        <div class="modal-dialog"></div>
+        <div class="modal-header flex-center">
+            <button class="mdi mdi-close-circle" type="button" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <iframe id="video" allow="autoplay"></iframe>
+    </div>
+    </div>
+
+    <script>
+        const videoEl = document.getElementById("video");
+
+        (function() {
+            if (window.location.pathname.startsWith('/how-to-play/')) {
+                videoEl.src = "https://www.youtube.com/embed/aeOE4uaUAg0?mute=1&enablejsapi=1";
+            } else if (window.location.pathname.startsWith('/how-to-play-google/')) {
+                videoEl.src = "https://www.youtube.com/embed/hbAw-6f6LW8?mute=1&enablejsapi=1";
+            }
+        })();
+
+        $('#videoTutorial').on('show.bs.modal', function() {
+            videoEl.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        });
+        $('#videoTutorial').on('hidden.bs.modal', function() {
+            videoEl.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+            videoEl.contentWindow.postMessage('{"event":"command","func":"seekTo","args":"0"}', '*');
+        });
+    </script>
+</body>
+
+</html>
